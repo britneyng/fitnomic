@@ -9,7 +9,7 @@ export default function LoginScreen({navigation}) {
       <Text style={styles.title}>Hey, welcome to AppName. </Text>
       <Text style={styles.subtitle}>Let's start your fitness adventure!</Text>
       <TextInput placeholder="Username" style={styles.input}></TextInput>
-      <TextInput placeholder="Password" secureTextEntry={true} style = {styles.input}>Password:</TextInput>
+      <TextInput placeholder="Password" secureTextEntry={true} style = {styles.input}></TextInput>
       <FlatButton
         text="Log in" bgColor='#745EAB'
         onPress={() => navigation.navigate("HomeScreen", {none: "none"})}

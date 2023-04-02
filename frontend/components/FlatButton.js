@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 
-export default function FlatButton({ text, onPress = () => {}, bgColor = 'black' }) {
+export default function FlatButton({ text, onPress = () => {}, bgColor = 'black'}) {
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={[styles.button, { backgroundColor: bgColor }]}>
@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
     width: '80%',
     alignItems: 'center',
     marginVertical: 10,
+    borderWidth: 0.1,
+    borderColor: 'black',
   },
   buttonText: {
     color: 'white',
