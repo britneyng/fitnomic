@@ -1,6 +1,9 @@
 import * as React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+
 
 import { createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 
@@ -24,10 +27,36 @@ export default function HomeScreen({navigation, route}) {
     //   <StatusBar style="auto" />
     // </View>
     <Tab.Navigator>
-        <Tab.Screen name="Home" component={home} />
-        <Tab.Screen name="Events" component={events} />
-        <Tab.Screen name="Rewards" component={rewards} />
-        <Tab.Screen name="Profile" component={profile} />
+        <Tab.Screen name="Home" component={home}
+         options={{title: 'Home', 
+          tabBarIcon: ({color}) => ( 
+          <MaterialCommunityIcons name = "home"
+          size = {26} color = {color} />
+        ) 
+        }}
+
+        />
+        <Tab.Screen name="Events" component={events}
+        options={{title: 'Events', 
+          tabBarIcon: ({color}) => ( 
+          <MaterialCommunityIcons name = "calendar-check"
+          size = {26} color = {color} />
+        ) 
+        }} />
+        <Tab.Screen name="Rewards" component={rewards}
+        options={{title: 'Rewards', 
+          tabBarIcon: ({color}) => ( 
+          <MaterialCommunityIcons name = "plus-circle-multiple-outline" 
+          size = {26} color = {color} />
+        ) 
+        }} />
+        <Tab.Screen name="Profile" component={profile}
+        options={{title: 'Profile', 
+          tabBarIcon: ({color}) => ( 
+          <MaterialCommunityIcons name = "account-circle-outline"
+          size = {26} color = {color} />
+        ) 
+        }} />
     </Tab.Navigator>
 
   );
