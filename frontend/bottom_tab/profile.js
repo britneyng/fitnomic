@@ -25,11 +25,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#968CE1',
-    width: '100',
+    width: '100%',
     paddingTop: 50,
   },
   cardContainer: {
-    width: '100',
+    width: '100%',
     paddingVertical: 20,
     paddingHorizontal: 10,
   },

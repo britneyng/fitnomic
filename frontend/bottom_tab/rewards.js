@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
-export default function Rewards({ source, title, description }) {
+export default function Rewards() {
   return (
     <View style={styles.container}>
       <Image source={require('../assets/jane-doe.png')} style={styles.image} />

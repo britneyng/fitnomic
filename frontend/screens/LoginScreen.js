@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 23,
-    fontFamily: 'Helvetica',
     paddingBottom: 10,
     fontWeight: 700,
     color: 'white',
