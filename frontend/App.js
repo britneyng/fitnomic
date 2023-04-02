@@ -51,11 +51,11 @@ function TabNavigator() {
 function StackNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name='LoginScreen' component={LoginScreen} />
-      <Stack.Screen name='HomeScreen' component={HomeScreen} />
-      <Stack.Screen name='EventsScreen' component={EventsScreen} />
-      <Stack.Screen name='RewardsScreen' component={RewardsScreen} />
-      <Stack.Screen name='ProfileScreen' component={ProfileScreen} />
+      <Stack.Screen name='LoginScreen' component={LoginScreen} options={{headerShown: false}} />
+      <Stack.Screen name='HomeScreen' component={HomeScreen} options={{ headerShown: false}} />
+      <Stack.Screen name='EventsScreen' component={EventsScreen} options={{ headerShown: false}} />
+      <Stack.Screen name='RewardsScreen' component={RewardsScreen} options={{ headerShown: false}}/>
+      <Stack.Screen name='ProfileScreen' component={ProfileScreen} options={{ headerShown: false}} />
     </Stack.Navigator>
   )
 }
@@ -68,23 +68,4 @@ export default function App() {
     </NavigationContainer>
   )
 }
-
-// export default function App() {
-//   return (
-//     <NavigationContainer>
-//        <Stack.Navigator>
-//         <Stack.Screen
-//            name = "Login"
-//            component={LoginScreen}
-//            options={ {title:"Welcome!"}} 
-//         />
-//         <Stack.Screen
-//            name = "Home"
-//            component={HomeScreen}
-//         />
-
-//        </Stack.Navigator>
-//     </NavigationContainer>
-//   );
-// }
 

@@ -17,7 +17,7 @@ export default function HomeScreen({navigation, route}) {
   let email = route.params.email;
   let password = route.params.password;
   let none = route.params.none;
-  
+
   return (
     // <View style={styles.container}>
     //   <Text>Home Screen</Text>
