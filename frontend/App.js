@@ -12,15 +12,15 @@ export default function App() {
         <Stack.Screen
            name = "Login"
            component={LoginScreen}
-           options={ {title:"Welcome!"}} 
+           options={{headerShown: false}}
         />
         <Stack.Screen
            name = "Home"
            component={HomeScreen}
+           options={{ headerShown: false}}
         />
 
        </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
