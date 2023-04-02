@@ -8,7 +8,7 @@ export default function LoginScreen({navigation}) {
       <Text>Password:</Text>
       <Button
         title="Sign up"
-        onPress={() => navigation.navigate("Home", {none: "none"})}
+        onPress={() => navigation.navigate("HomeScreen", {none: "none"})}
         />
       <StatusBar style="auto" />
     </View>

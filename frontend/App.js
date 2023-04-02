@@ -26,6 +26,17 @@ import ProfileScreen from './screens/ProfileScreen';
 const Tab   = createMaterialBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
+const LogIn = createNativeStackNavigator();
+
+const LogInScreen = () => {
+  <LogIn.Navigator>
+    <LogIn.Screen 
+      name = "Sign-In"
+      component={LoginScreen}
+    />
+  </LogIn.Navigator>
+}
+
 function TabNavigator() {
   return (
     <Tab.Navigator>
@@ -53,7 +64,7 @@ function StackNavigator() {
 export default function App() {
   return (
     <NavigationContainer>
-      <TabNavigator />
+      <StackNavigator />
     </NavigationContainer>
   )
 }
