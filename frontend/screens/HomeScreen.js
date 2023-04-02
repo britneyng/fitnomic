@@ -22,11 +22,7 @@ export default function HomeScreen({navigation, route}) {
   let none = route.params.none;
 
   return (
-    // <View style={styles.container}>
-    //   <Text>Home Screen</Text>
-    //   <StatusBar style="auto" />
-    // </View>
-    <Tab.Navigator>
+    <Tab.Navigator barStyle={{ backgroundColor: '#B1AAE9' }} > 
         <Tab.Screen name="Home" component={home}
          options={{title: 'Home', 
           tabBarIcon: ({color}) => ( 
@@ -50,7 +46,7 @@ export default function HomeScreen({navigation, route}) {
           size = {26} color = {color} />
         ) 
         }} />
-        <Tab.Screen name="Profile" component={profile}
+        <Tab.Screen name="Profile" component={profile} 
         options={{title: 'Profile', 
           tabBarIcon: ({color}) => ( 
           <MaterialCommunityIcons name = "account-circle-outline"
@@ -61,12 +57,3 @@ export default function HomeScreen({navigation, route}) {
 
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#968CE1',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

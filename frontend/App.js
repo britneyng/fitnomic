@@ -37,17 +37,6 @@ const LogInScreen = () => {
   </LogIn.Navigator>
 }
 
-function TabNavigator() {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={home} />
-      <Tab.Screen name="Events" component={events} />
-      <Tab.Screen name="Rewards" component={rewards} />
-      <Tab.Screen name="Profile" component={profile} />
-    </Tab.Navigator>
-  )
-}
-
 function StackNavigator() {
   return (
     <Stack.Navigator>
