@@ -7,10 +7,15 @@ export default function Home({navigation, route}) {
   return (
     <View style={styles.container}>
     <Image
-        source={require('../assets/roadmap.png')}
-
+        source={require('../assets/lock-homePage.png')}
     />
-      <Text>Home Tab</Text>
+    <Image
+        source={require('../assets/string-homePage.png')}
+        style={{opacity:0.7}}
+    /> 
+    <Image
+        source={require('../assets/roadmap.png')}        
+    />
       <StatusBar style="auto" />
     </View>
   );
