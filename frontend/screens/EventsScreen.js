@@ -7,10 +7,7 @@ export default function EventsScreen({navigation, route}) {
   
   return (
     <View style={styles.container}>
-      <Text
-       onPress = {() => navigation.navigate('Home')}
-       > Event Screen
-      </Text>
+      <Text>Events Screen</Text>
       <StatusBar style="auto" />
     </View>
     // <Tab.Navigator>

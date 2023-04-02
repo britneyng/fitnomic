@@ -6,7 +6,7 @@ export default function Profile({navigation, route}) {
   
   return (
     <View style={styles.container}>
-      <Text>Profile Bottom Tab</Text>
+      <Text>Profile Tab</Text>
       <StatusBar style="auto" />
     </View>
   );

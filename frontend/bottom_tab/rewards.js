@@ -6,7 +6,7 @@ export default function Rewards({navigation, route}) {
   
   return (
     <View style={styles.container}>
-      <Text>Rewards Bottom Tab</Text>
+      <Text>Rewards Tab</Text>
       <StatusBar style="auto" />
     </View>
   );

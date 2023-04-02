@@ -6,7 +6,7 @@ export default function Home({navigation, route}) {
   
   return (
     <View style={styles.container}>
-      <Text>Home Bottom Tab</Text>
+      <Text>Home Tab</Text>
       <StatusBar style="auto" />
     </View>
   );

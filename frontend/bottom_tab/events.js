@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 export default function Events({navigation, route}) { 
   return (
     <View style={styles.container}>
-      <Text>Events Bottom Tab</Text>
+      <Text>Events Tab</Text>
       <StatusBar style="auto" />
     </View>
   );
