@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
-    textTransform: 'uppercase',
+    textTransform: 'capitalize',
     textAlign: 'center',
     fontSize: 16,
   },

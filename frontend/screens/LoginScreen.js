@@ -11,7 +11,7 @@ export default function LoginScreen({navigation}) {
       <TextInput placeholder="Username" style={styles.input}></TextInput>
       <TextInput placeholder="Password" secureTextEntry={true} style = {styles.input}>Password:</TextInput>
       <FlatButton
-        text="Sign up" bgColor='#745EAB'
+        text="Log in" bgColor='#745EAB'
         onPress={() => navigation.navigate("Home", {none: "none"})}
       />
         <View style={styles.hrContainer}>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   title: {
-    fontSize: 20,
+    fontSize: 23,
     fontFamily: 'Helvetica',
     paddingBottom: 10,
     fontWeight: 700,
