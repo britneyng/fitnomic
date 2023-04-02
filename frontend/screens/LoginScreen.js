@@ -12,7 +12,7 @@ export default function LoginScreen({navigation}) {
       <TextInput placeholder="Password" secureTextEntry={true} style = {styles.input}>Password:</TextInput>
       <FlatButton
         text="Log in" bgColor='#745EAB'
-        onPress={() => navigation.navigate("Home", {none: "none"})}
+        onPress={() => navigation.navigate("HomeScreen", {none: "none"})}
       />
         <View style={styles.hrContainer}>
           <View style={styles.hr}></View>
