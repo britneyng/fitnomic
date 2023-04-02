@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, View, Text, } from 'react-native';
+import { Button, StyleSheet, View, Text, Image } from 'react-native';
 import { TextInput } from 'react-native';
 import FlatButton from '../components/FlatButton';
 
 export default function LoginScreen({navigation}) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hey, welcome to AppName. </Text>
+      {/* <Image style={styles.image}source={require('../assets/logo.png')} /> */}
+      <Image style={styles.image} source={require('../assets/logo.png')} />
+      <Text style={styles.title}>Hey, welcome to FitNomic! </Text>
       <Text style={styles.subtitle}>Let's start your fitness adventure!</Text>
       <TextInput placeholder="Username" style={styles.input}></TextInput>
       <TextInput placeholder="Password" secureTextEntry={true} style = {styles.input}></TextInput>
@@ -48,7 +50,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 23,
-    fontFamily: 'Helvetica',
     paddingBottom: 10,
     fontWeight: 700,
     color: 'white',
@@ -75,4 +76,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     fontWeight: 700,
   },
+  image: {
+    height: 300,
+    width: 300,
+    alignSelf: 'center',
+    
+  }
 });
